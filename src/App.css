@@ -1,38 +1,75 @@
+*{
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+#root{
+  background-color: black;/*#282c34;*/
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/*      Nav bar styling     */
+.nav{
+
+}
+.nav li{
+  list-style: none;
+  padding: 5px;
+}
+.nav li a{
+  cursor: pointer;
+}
+.nav li a:hover{
+  color: red;
+}
+.add_color{
+  color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
+/*      Planet component    */
+.planet_div{
+
+  display: grid;
+  justify-content: center;
+}
+.planet_div img{
+  width: 98%;
+  padding: 2%
+}
+.quick_facts ul{
+  list-style: none;
+  padding: 10px;
+}
+.quick_facts ul li{
+  padding: 5px;
+}
+.planet_description{
+  padding: 10px;
+  line-height: 1.6;
+}
+.more_info{
+  padding: 5px;
+}
+.more_info a{
+  color: blue;
+  text-decoration: none;
+}
+
+@keyframes rotation{
+  from{
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotateY(180deg);
   }
 }
