@@ -4,6 +4,8 @@ This project was created using react functional components along with css and ht
 information is gathered from nasa website [here](https://solarsystem.nasa.gov/planets/overview/). All the info gathered
 is in the file [planets_info.json](./src/planets_info.json)
 
+![Gif of Planets](https://github.com/manny2384/planets/blob/main/planets.gif)
+
 ## Checkout the code
 - [main app component](./src/App.js)
 - [planets component](./src/planet_view.js)
